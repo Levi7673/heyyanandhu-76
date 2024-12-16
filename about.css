@@ -1,0 +1,139 @@
+/* About Page Styles */
+.about-container {
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.973);
+  min-height: calc(100vh - 72px);
+}
+
+.center-text {
+  text-align: center; /* Centers the text horizontally */
+}
+
+.movable {
+  position: relative; /* Enables positioning relative to its normal position */
+  top: 10px; /* Moves 50px down */
+  left: 20px; /* Moves 100px to the right */
+  padding: 10px;
+  text-align: center; /* Centers the text horizontally */
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.about-card {
+  background: rgba(194, 248, 69, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.profile-section {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.profile-image-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #f3f4f6, #e5e7eb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  font-size: 1.2rem;
+}
+
+.profile-info {
+  padding: 1rem 0;
+}
+
+.info-group {
+  margin-bottom: 1.5rem;
+}
+
+.info-label {
+  font-size: 0.875rem;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.info-value {
+  font-size: 1.125rem;
+  color: #000000af;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  background: rgba(189, 240, 71, 0.95);
+  border-top: 1px solid #000000;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: rgb(0, 0, 0);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+}
+
+.contact-text {
+  font-size: 1rem;
+  color: #ebebebd7;
+}
+
+@media (max-width: 768px) {
+  .profile-section {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-image-container {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+}
